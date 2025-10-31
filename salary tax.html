@@ -10,11 +10,7 @@
 <body>
     <table border="2" width="500px" align="center" cellpadding="5">
         <tr>
-        <tr bgcolor="green">
-            <td colspan="6">
-                <h1 align="center">Income Tax </h1>
-            </td>
-        </tr>
+        
         <th>Date</th>
         <th>Salary</th>
         <th>Tax Amount</th>
@@ -29,14 +25,14 @@
             <td id="sCell"></td>
             <td id="taCell"></td>
             <td id="homeCell"></td>
-            <td id="tCell"> </td>
+            
         </tr>
     </table>
 
     <script>
         let obj = new Date();
         let date = obj.toLocaleDateString();
-        let time = obj.toLocaleTimeString();
+        
 
         let S = prompt("Enter Salary Amount");
         
@@ -65,10 +61,11 @@
         document.getElementById("dCell").innerHTML = date;
         document.getElementById("sCell").innerHTML = S;
         document.getElementById("homeCell").innerHTML = H;
-        document.getElementById("tCell").innerHTML = time;
+        
 
     </script>
 
 </body>
+
 
 </html>
