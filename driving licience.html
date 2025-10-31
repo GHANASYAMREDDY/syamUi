@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>driveing Liciences</title>
+</head>
+
+<body>
+    <table border="2" width="500px" align="center" cellpadding="5">
+        <tr>
+        <tr bgcolor="pink">
+            <td colspan="6">
+                <h1 align="center">driveing Liciences age eligiblity check </h1>
+            </td>
+        </tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>driveing Licience Eligibility</th>
+        <th>Time</th>
+
+
+
+        </tr>
+        <tr>
+            <td id="dCell"></td>
+            <td id="nCell"></td>
+            <td id="aCell"></td>
+            <td id="iCell"></td>
+            <td id="tCell"> </td>
+        </tr>
+    </table>
+
+    <script>
+        let obj = new Date();
+        let date = obj.toLocaleDateString();
+        let time = obj.toLocaleTimeString();
+        let name = prompt("Enter the name of the person:");
+        let age = prompt("enter person age");
+        if (age <= 18) {
+            document.getElementById("iCell").innerHTML = " NOT Eligible";
+        }
+        else {
+            document.getElementById("iCell").innerHTML = "Eligible";
+        }
+
+
+
+
+        // Fill table cells
+        document.getElementById("dCell").innerHTML = date;
+        document.getElementById("nCell").innerHTML = name;
+        document.getElementById("aCell").innerHTML = age;
+        document.getElementById("tCell").innerHTML = time;
+
+    </script>
+
+</body>
+
+</html>
